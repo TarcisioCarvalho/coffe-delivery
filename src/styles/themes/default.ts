@@ -30,7 +30,13 @@ export const defaultTheme ={
         'size-10px':'0.625rem',
     },fonts:{
         regular:'Roboto',
-        title:'Baloo 2'
+        title:'Baloo 2',
+        
+    },fontsWeight:{
+        regularRoboto:'400',
+        boldRoboto:'700',
+        balooBold:'700',
+        balooExtraBold:'800',
     }
 
 
