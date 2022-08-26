@@ -23,16 +23,40 @@ export const HeaderContainer = styled.header`
         display:flex;
         align-items:center;
         gap:4px;
+        border-radius:6px;
+        span{
+            color:${({theme})=> theme.colors["purple-dark"]};
+            font-size:${({theme})=> theme.textSizes["size-14px"]};
+            line-height:130%;
+        }
     }
     display:flex;
     align-items:center;
     gap:12px;
     a{
+        display:flex;
         padding:.5rem;
         background-color:rgba(241, 233, 201, 1);
-        
+        border-radius:6px;
         color:${({theme})=> theme.colors["yellow-dark"]};
+        position:relative;
         cursor: pointer;
+        div{
+           
+            font-size:${({theme})=> theme.textSizes["size-12px"]};
+            font-weight:${({theme})=> theme.fontsWeight.boldRoboto};
+            width:20px;
+            height:20px;
+            border-radius:50%;
+            color:${({theme})=> theme.colors.white};
+            background-color:${({theme})=> theme.colors["yellow-dark"]};
+            display:flex;
+            align-items:center;
+            justify-content:center;
+            position:absolute;
+            top:-10px;
+            right:-10px;
+        }
     }
  }
 `;
