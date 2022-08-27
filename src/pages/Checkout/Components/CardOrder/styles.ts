@@ -14,6 +14,7 @@ export const CardOrderContainer = styled.article`
     border-radius: 6px 36px;
 
     .prices{
+        
         padding-top:1.5rem;
         width:100%;
         display:flex;

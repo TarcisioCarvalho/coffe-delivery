@@ -2,6 +2,7 @@ import styled from "styled-components";
 
 
 export const CardOrderItemContainer = styled.div`
+
 display:flex;
 align-items:top;
 justify-content:space-around;
@@ -19,10 +20,12 @@ div {
     align-items:center;
     gap: 0.5rem;
     div {
-        background-color:${({theme})=> theme.colors["base-button"]};
+        
         border:none;
         padding: 0.25rem;
-        
+        div {
+            background-color:${({theme})=> theme.colors["base-button"]};
+        }
         span {
             color:${({theme})=> theme.colors["base-title"]};
         }
