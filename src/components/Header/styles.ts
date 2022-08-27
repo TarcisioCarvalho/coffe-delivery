@@ -43,6 +43,11 @@ export const HeaderContainer = styled.header`
         color:${({theme})=> theme.colors["yellow-dark"]};
         position:relative;
         cursor: pointer;
+        transition: 0.3s;
+        &:hover{
+            color:${({theme})=> theme.colors["yellow-light"]};
+            background-color:${({theme})=> theme.colors["yellow-dark"]};
+        }
         div{
            
             font-size:${({theme})=> theme.textSizes["size-12px"]};

@@ -84,7 +84,7 @@ export const CardContainer = styled.div`
                 cursor: pointer;
                 background-color:${({theme})=> theme.colors["base-button"]};
                 color:${({theme})=> theme.colors["purple"]};
-
+                transition: 0.3s;
                 &:hover{
                     color:${({theme})=> theme.colors["purple-dark"]};
 
@@ -101,7 +101,7 @@ export const CardContainer = styled.div`
             background-color:${({theme})=> theme.colors["purple-dark"]};
             color:${({theme})=> theme.colors.white};
             cursor: pointer;
-            
+            transition: 0.3s;
         }
 
         .buttonCart:hover{
