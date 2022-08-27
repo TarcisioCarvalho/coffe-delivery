@@ -12,9 +12,28 @@ export const HomeContainer = styled.div`
     align-items:center;
     gap:1rem;
 
-    img{
+    @media only screen and (min-width: 700px) {
+        
+        .homeTemplate{
+            display:flex;
+            flex-direction:row-reverse;
+            align-items:top;
+        }
+            
+    }
+
+    .imageHome{
         margin-top:1rem;
         width:95%;
+    }
+
+    @media only screen and (min-width: 700px) {
+        
+       .imageHome{
+        width:476px;
+        height:360px;
+       }
+            
     }
 
     h1{
@@ -33,6 +52,13 @@ export const HomeContainer = styled.div`
         text-align:center;
         width:100%;
     }
+
+    @media only screen and (min-width: 700px) {
+        
+        h1,p {
+            text-align:left;
+       }             
+     }
     ul{
         list-style:none;
         margin-top:1rem;
@@ -58,6 +84,21 @@ export const HomeContainer = styled.div`
             border-radius:50%;
             
         }
+    }
+
+    @media only screen and (min-width: 700px) {
+        
+        ul{
+            display:grid;
+            grid-template-columns: 1fr 1fr;
+        }
+
+        main{
+            display:grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            gap:2rem;
+        }
+            
     }
     
     h4{

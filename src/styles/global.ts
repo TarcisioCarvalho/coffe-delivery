@@ -22,8 +22,8 @@ export const GlobalStyle = createGlobalStyle`
 
     @media only screen and (min-width: 700px) {
         body {
-                padding-left:10rem;
-                padding-right:10rem;
+                padding-left:7rem;
+                padding-right:7rem;
             }
         }
 

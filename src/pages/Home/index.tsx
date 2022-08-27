@@ -12,7 +12,8 @@ interface SpanProps{
 export const Home = () => {
   return (
     <HomeContainer>
-        <img src={homeImage} alt="Foto De um Café" />
+        <div  className='homeTemplate'>
+        <img src={homeImage} alt="Foto De um Café"  className='imageHome'/>
         <div>
             <h1>Encontre o café perfeito para qualquer hora do dia</h1>
             <p>Com o Coffee Delivery você recebe seu café onde estiver, a qualquer hora</p>
@@ -25,16 +26,18 @@ export const Home = () => {
                         Compra simples e segura
                     </li>
                     <li>
-                        <SpanContainer variant='yellow'>
-                            <Timer size={16}/>
-                        </SpanContainer>
-                        Entrega rápida e rastreada</li>
-                    <li>
                         <SpanContainer variant='base-text'>
                             <Package size={16}/>
                         </SpanContainer>
                         Embalagem mantém o café intacto
                     </li>
+                    <li>
+                        <SpanContainer variant='yellow'>
+                            <Timer size={16}/>
+                        </SpanContainer>
+                        Entrega rápida e rastreada
+                    </li>
+                    
                     <li>
                         <SpanContainer variant='purple'>
                             <Coffee size={16}/>
@@ -44,7 +47,10 @@ export const Home = () => {
                 </ul>
             </div>
         </div>
+        </div>
+       
         <h4>Nossos Cafés</h4>
+        <main>
         <Card/>
         <Card/>
         <Card/>
@@ -61,6 +67,8 @@ export const Home = () => {
 
         <Card/>
         <Card/>
+        </main>
+        
     </HomeContainer>
   )
 }

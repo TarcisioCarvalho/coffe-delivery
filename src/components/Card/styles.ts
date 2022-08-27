@@ -2,6 +2,7 @@ import styled from "styled-components";
 
 
 export const CardContainer = styled.div`
+    margin-top:2rem;
     display:flex;
     flex-direction:column;
     align-items:center;
@@ -13,6 +14,13 @@ export const CardContainer = styled.div`
     border-radius: 6px 36px;
    /*  padding-left:20px;
     padding-right:20px; */
+
+
+    @media only screen and (min-width: 700px) {
+        
+        width:256px;
+             
+     }
     img{
         width:120px;
         height:120px;
