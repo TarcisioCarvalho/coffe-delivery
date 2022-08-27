@@ -15,12 +15,14 @@ img {
 }
 div {
     display:flex;
+    
     align-items:center;
     gap: 0.5rem;
     div {
         background-color:${({theme})=> theme.colors["base-button"]};
         border:none;
         padding: 0.25rem;
+        
         span {
             color:${({theme})=> theme.colors["base-title"]};
         }
@@ -47,5 +49,10 @@ div {
 
 .price{
     font-weight:${({theme})=> theme.fontsWeight.boldRoboto};
+}
+
+.addOrRemoveItens{
+    flex-direction:column;
+    gap: 0.5rem;
 }
 `;

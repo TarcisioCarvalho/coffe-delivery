@@ -10,12 +10,15 @@ export const CardOrderItem = () => {
                 <img src={CoffeImg} alt="" />
                 <div>
                     <h2>Expresso Tradicional</h2>
-                    <div>
-                        <button><Minus size={14}/></button>
-                        <span>5</span>
-                        <button><Plus size={14}/></button>
-                    </div>
-                    <button><span><Trash size={14}/></span> Remover </button>
+                        <div className='addOrRemoveItens'>
+                            <div>
+                                <button><Minus size={14}/></button>
+                                <span>5</span>
+                                <button><Plus size={14}/></button>
+                            </div>
+
+                            <button><span><Trash size={14}/></span> Remover </button>
+                        </div>
                 </div>
                 <span className='price'>R$ 9,99</span>
     </CardOrderItemContainer>
