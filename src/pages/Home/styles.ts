@@ -10,7 +10,7 @@ export const HomeContainer = styled.div`
     display:flex;
     flex-direction:column;
     align-items:center;
-    
+    gap:1rem;
 
     img{
         margin-top:1rem;
@@ -34,7 +34,6 @@ export const HomeContainer = styled.div`
         width:100%;
     }
     ul{
-        border:1px solid red;
         list-style:none;
         margin-top:1rem;
         display:flex;
@@ -61,7 +60,13 @@ export const HomeContainer = styled.div`
         }
     }
     
-
+    h4{
+        font-family:${({theme})=> theme.fonts.title};
+        font-size:${({theme})=> theme.textSizes["size-32px"]};
+        font-weight:${({theme})=> theme.fontsWeight.balooExtraBold};
+        text-align:left;
+        width:100%;
+    }
     
 `;
 

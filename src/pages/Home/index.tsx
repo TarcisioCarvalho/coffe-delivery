@@ -44,7 +44,22 @@ export const Home = () => {
                 </ul>
             </div>
         </div>
+        <h4>Nossos Cafés</h4>
+        <Card/>
+        <Card/>
+        <Card/>
+        <Card/>
+        <Card/>
+        <Card/>
+        <Card/>
+        <Card/>
+        <Card/>
+        <Card/>
+        <Card/>
+        <Card/>
+        <Card/>
 
+        <Card/>
         <Card/>
     </HomeContainer>
   )

@@ -5,7 +5,8 @@ export const CardContainer = styled.div`
     display:flex;
     flex-direction:column;
     align-items:center;
-    width:256px;
+    width:100%;
+    //max-width:256px;
     height:310px;
     background-color:${({theme})=> theme.colors["base-card"]};
     position:relative;
@@ -16,7 +17,7 @@ export const CardContainer = styled.div`
         width:120px;
         height:120px;
         position:relative;
-        top:-20px;
+        top:-30px;
     }
 
     h3{
@@ -45,10 +46,13 @@ export const CardContainer = styled.div`
     div{
         width:208px;
         
+        width:100%;
         margin-top:36px;
         display:flex;
         align-items:center;
-        justify-content:space-evenly;
+        //justify-content:space-evenly;
+        justify-content:space-around;
+        
 
         span{
             font-size:${({theme})=> theme.textSizes["size-14px"]};
