@@ -28,6 +28,7 @@ h3 {
     flex-direction:column;
     gap: 0.5rem;
     button {
+        cursor: pointer;
         border:1px solid transparent;
         background-color:${({theme})=> theme.colors["base-button"]};
         width:100%;

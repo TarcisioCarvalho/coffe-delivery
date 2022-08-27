@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 
 export const CardOrderItemContainer = styled.div`
-
+width:100%;
 display:flex;
 align-items:top;
 justify-content:space-around;
@@ -57,5 +57,10 @@ div {
 .addOrRemoveItens{
     flex-direction:column;
     gap: 0.5rem;
+}
+
+
+@media only screen and (min-width: 700px) {
+    width:498px;
 }
 `;
