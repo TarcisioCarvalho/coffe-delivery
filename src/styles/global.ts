@@ -15,10 +15,17 @@ export const GlobalStyle = createGlobalStyle`
     body{
         //background-color:${({theme})=> theme.colors.background};
         background-color:drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-        padding-left:10rem;
-        padding-right:10rem;
+        padding-left:1rem;
+        padding-right:1rem;
         -webkit-font-smoothing: antialiased;
     }
+
+    @media only screen and (min-width: 700px) {
+        body {
+                padding-left:10rem;
+                padding-right:10rem;
+            }
+        }
 
     body, input, textarea, button{
         font-family:${({theme}) => theme.fonts.regular},sans-serif;

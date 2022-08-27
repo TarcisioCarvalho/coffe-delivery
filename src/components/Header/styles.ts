@@ -4,11 +4,11 @@ import styled from "styled-components";
 
 export const HeaderContainer = styled.header`
     padding-top:2rem;
-    padding-bottom:2rem;
+    padding-bottom:2rem; 
     display:flex;
     align-items:center;
     justify-content:space-between;
-
+  
 
 
  nav{
@@ -24,6 +24,8 @@ export const HeaderContainer = styled.header`
         align-items:center;
         gap:4px;
         border-radius:6px;
+
+
         span{
             color:${({theme})=> theme.colors["purple-dark"]};
             font-size:${({theme})=> theme.textSizes["size-14px"]};
