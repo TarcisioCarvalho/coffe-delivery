@@ -20,6 +20,10 @@ export const GlobalStyle = createGlobalStyle`
         -webkit-font-smoothing: antialiased;
     }
 
+    ul {
+        list-style:none ;
+    }
+
     @media only screen and (min-width: 1150px) {
         body {
                 padding-left:7rem;
