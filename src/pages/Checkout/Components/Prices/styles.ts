@@ -50,6 +50,7 @@ export const PricesContainer = styled.div`
         font-size:${({theme})=> theme.textSizes["size-14px"]};
         font-weight:${({theme})=> theme.fontsWeight.boldRoboto};
         transition: 0.3s;
+        cursor:pointer;
 
         &:hover{
             background-color:${({theme})=> theme.colors["yellow-dark"]};

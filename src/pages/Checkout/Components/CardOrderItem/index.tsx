@@ -17,7 +17,7 @@ export const CardOrderItem = () => {
                                 <button><Plus size={14}/></button>
                             </div>
 
-                            <button><span><Trash size={14}/></span> Remover </button>
+                            <button className='buttonRemover'><span><Trash size={14}/></span> Remover </button>
                         </div>
                 </div>
                 <span className='price'>R$ 9,99</span>

@@ -34,6 +34,7 @@ div {
         }
     }
     button {
+        cursor: pointer;
         display:flex;
         align-items:center;
         gap: 0.25rem;;
@@ -41,8 +42,12 @@ div {
         border:none;
         padding: 0.25rem;
         font-size:${({theme})=> theme.textSizes["size-12px"]};
+        transition: .3s;
         span {
             color:${({theme})=> theme.colors.purple};
+        }
+        &:hover{
+            color:${({theme})=> theme.colors["purple-dark"]};
         }
     }
     h2 {
@@ -57,6 +62,14 @@ div {
 .addOrRemoveItens{
     flex-direction:column;
     gap: 0.5rem;
+}
+
+.buttonRemover:hover{
+    background-color:${({theme})=> theme.colors["base-hover"]};
+    color:${({theme})=> theme.colors["base-subtitle"]};
+    span {
+        color:${({theme})=> theme.colors["purple-dark"]};
+    }
 }
 
 
