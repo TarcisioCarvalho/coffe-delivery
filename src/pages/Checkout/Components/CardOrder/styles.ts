@@ -59,4 +59,9 @@ export const CardOrderContainer = styled.article`
         font-weight:${({theme})=> theme.fontsWeight.boldRoboto};
     }
 
+    @media only screen and (min-width: 1150px) {
+      width:54%;
+      border-radius: 6px 36px 0 0;
+    }
+
 `;

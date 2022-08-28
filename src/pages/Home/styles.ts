@@ -12,7 +12,7 @@ export const HomeContainer = styled.div`
     align-items:center;
     gap:1rem;
 
-    @media only screen and (min-width: 700px) {
+    @media only screen and (min-width: 1150px) {
         
         .homeTemplate{
             display:flex;
@@ -27,7 +27,7 @@ export const HomeContainer = styled.div`
         width:95%;
     }
 
-    @media only screen and (min-width: 700px) {
+    @media only screen and (min-width: 1150px) {
         
        .imageHome{
         width:476px;
@@ -53,7 +53,7 @@ export const HomeContainer = styled.div`
         width:100%;
     }
 
-    @media only screen and (min-width: 700px) {
+    @media only screen and (min-width: 1150px) {
         
         h1,p {
             text-align:left;
@@ -86,7 +86,7 @@ export const HomeContainer = styled.div`
         }
     }
 
-    @media only screen and (min-width: 700px) {
+    @media only screen and (min-width: 1150px) {
         
         ul{
             display:grid;

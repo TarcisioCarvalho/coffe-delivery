@@ -20,7 +20,7 @@ export const GlobalStyle = createGlobalStyle`
         -webkit-font-smoothing: antialiased;
     }
 
-    @media only screen and (min-width: 700px) {
+    @media only screen and (min-width: 1150px) {
         body {
                 padding-left:7rem;
                 padding-right:7rem;

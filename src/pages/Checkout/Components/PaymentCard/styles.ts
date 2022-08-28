@@ -10,7 +10,7 @@ flex-direction:column ;
 align-items:center ;
 width:100%;
 gap:2rem;
-
+margin-top:1rem;
 p {
     text-align:center;
 }
@@ -47,5 +47,9 @@ h3 {
         }
     }
 }
-
+@media only screen and (min-width: 1150px) {
+      width:54%;
+      margin-top:1rem;
+      margin-bottom:1rem;
+    }
 `;

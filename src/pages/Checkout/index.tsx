@@ -14,9 +14,11 @@ export const Checkout = () => {
             <Form/>
             <CardOrder/>
         </div>
-        
+        <div className='paymentCardAndPrices'>
         <PaymentCard/>
         <Prices/>
+        </div>
+      
     </CheckOutContainer>
   )
 }

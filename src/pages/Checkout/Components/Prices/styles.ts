@@ -57,5 +57,9 @@ export const PricesContainer = styled.div`
         }
     }
        
-    
+    @media only screen and (min-width: 1150px) {  
+    width:42.7%;
+    border-radius:0 0 6px 36px;
+    height:100%;
+    }
 `;

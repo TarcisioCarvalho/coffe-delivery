@@ -27,4 +27,8 @@ export const FormContainer = styled.form`
         }
     }
 
+    @media only screen and (min-width: 1150px) {
+      width:69%;
+    }
+
 `;

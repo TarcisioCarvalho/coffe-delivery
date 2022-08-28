@@ -73,7 +73,7 @@ div {
 }
 
 
-@media only screen and (min-width: 700px) {
-    width:498px;
+@media only screen and (min-width: 1150px) {
+    width:37%;
 }
 `;

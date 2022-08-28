@@ -11,6 +11,9 @@ export const Prices = () => {
     <div><span>Total</span><span>33.50 R$</span></div>
 
     <button className='buttonOrder'>Confirmar Pedido</button>
+    <div className='branca'>
+
+    </div>
 </PricesContainer>
   )
 }
