@@ -13,8 +13,8 @@ export const Success = () => {
                 <li>
                     <IconContainer colorIcon = 'purple'><MapPin size={16}/></IconContainer>
                     <div>
-                        <p>Entrega em Rua João Daniel Martinelli,</p>
-                        <p> 102Farrapos - Porto Alegre, RS</p>
+                        <p>Entrega em Rua <b>João Daniel Martinelli,102</b></p>
+                        <p> Farrapos - Porto Alegre, RS</p>
                     </div>
                 </li>
                 <li>

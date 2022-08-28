@@ -47,19 +47,41 @@ export const SuccessContainer = styled.div`
                     display:flex;
                     align-items:center;
                     justify-content:center;
-                    width:2rem;
-                    height:2rem;
+                    min-width:2rem;
+                    min-height:2rem;
+                    max-width:2rem;
+                    max-height:2rem;
                     border-radius:50%;
-                    
                     color:white;
                 }
+               
+           
                 display:flex;
+                align-items:top;
                 gap: 0.75rem;
             }
+            li:nth-child(2){
+                div {
+                    p:nth-child(2){
+                       
+                        font-weight:${({theme})=> theme.fontsWeight.boldRoboto};
+                    }
+                }
+              }
+              li:nth-child(3){
+                div {
+                    p:nth-child(2){
+                       
+                        font-weight:${({theme})=> theme.fontsWeight.boldRoboto};
+                    }
+                }
+              }
         }
     }
+    img {
+        width:100%;
+    }
     @media only screen and (min-width: 1150px) {
-      
      flex-direction:row;
     }
 `;
