@@ -3,6 +3,7 @@ import { CardContainer } from './styles'
 //import coffeExpresso from '../../assets/img/coffee-expresso.jpg';
 import coffeExpresso from '../../assets/img/coffe.svg';
 import { Minus, Plus, ShoppingCartSimple } from 'phosphor-react';
+import { NavLink } from 'react-router-dom';
 
 
 
@@ -22,9 +23,9 @@ export const Card = () => {
                 <span>5</span>
                 <button><Plus size={14}/></button>
             </div>
-            <button className='buttonCart'>
-                <ShoppingCartSimple size={22}/>
-            </button>
+            <NavLink to='Checkout' className='buttonCart'>
+               <ShoppingCartSimple size={22}/> 
+            </NavLink>
         </div>
     </CardContainer>
   )

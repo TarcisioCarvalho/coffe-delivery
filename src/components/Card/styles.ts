@@ -79,7 +79,7 @@ export const CardContainer = styled.div`
             background-color:${({theme})=> theme.colors["base-button"]};
             margin-top:0;
             width:76px;
-            button{
+            .buttonCart{
                 border:none;
                 cursor: pointer;
                 background-color:${({theme})=> theme.colors["base-button"]};
@@ -92,7 +92,7 @@ export const CardContainer = styled.div`
             }
         }
 
-        button{
+        .buttonCart{
             display:flex;
             align-items:center;
             justify-content:center;
