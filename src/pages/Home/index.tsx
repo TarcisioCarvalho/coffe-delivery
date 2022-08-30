@@ -3,6 +3,7 @@ import { HomeContainer, SpanContainer } from './styles';
 import homeImage from '../../assets/img/CoffePrincipal.png';
 import { Card } from '../../components/Card';
 import { Coffee, Package, ShoppingCart, Timer } from 'phosphor-react';
+import { coffes } from '../../data/data';
 
 
 interface SpanProps{
@@ -51,22 +52,15 @@ export const Home = () => {
        
         <h4>Nossos Cafés</h4>
         <main>
-        <Card/>
-        <Card/>
-        <Card/>
-        <Card/>
-        <Card/>
-        <Card/>
-        <Card/>
-        <Card/>
-        <Card/>
-        <Card/>
-        <Card/>
-        <Card/>
-        <Card/>
-
-        <Card/>
-        <Card/>
+                {coffes.map(coffe => {
+                    return (<Card 
+                        img={coffe.img}
+                        nome={coffe.nome}
+                        descricao={coffe.descricao}
+                        categorias={coffe.categoria}
+                        preco={coffe.preco}
+                        />)
+                })}
         </main>
         
     </HomeContainer>

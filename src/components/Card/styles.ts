@@ -28,14 +28,23 @@ export const CardContainer = styled.div`
         top:-30px;
     }
 
+    .divCategorias{
+        margin-top:-8px;
+        display:flex;
+        align-items:center;
+        justify-content:center;
+        gap: 0.25rem;
+    }
+
     h3{
+        
         padding:4px 8px;
         color:${({theme})=> theme.colors["yellow-dark"]};
         background-color:${({theme})=> theme.colors["yellow-light"]};
         border-radius:100px;
         font-size:${({theme})=> theme.textSizes["size-10px"]};
         font-family:${({theme})=> theme.fontsWeight.boldRoboto};
-        margin-top:-8px;
+       // margin-top:-8px;
     }
 
     h2{

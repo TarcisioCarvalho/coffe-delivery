@@ -4,19 +4,32 @@ import { CardContainer } from './styles'
 import coffeExpresso from '../../assets/img/coffe.svg';
 import { Minus, Plus, ShoppingCartSimple } from 'phosphor-react';
 import { NavLink } from 'react-router-dom';
+import cubano from '../../assets/img/coffes/Cubano.svg';
 
 
+interface CardProps{
+    img:  string ;
+    nome:  string;
+    descricao: string;
+    categorias: string[];
+    preco: number;
+}
 
-export const Card = () => {
+
+export const Card = ({img,nome,descricao,categorias,preco}:CardProps) => {
+
+    
   return (
     <CardContainer>
-        <img src={coffeExpresso} alt="Café Expresso" />
-        <h3>Categoria</h3>
-        <h2>Nome do Café</h2>
-        <p>Descrição do Café seus ingredientes e como é feito </p>
+        <img src={img} alt="" />
+        <div className='divCategorias'>
+             {categorias.map(categoria => <h3>{categoria}</h3>)}
+        </div>
+        <h2>{nome}</h2>
+        <p>{descricao} </p>
         <div>
             <span>
-                R$ <span>9,90</span>
+                R$ <span>{preco}</span>
             </span>
             <div>
                 <button><Minus size={14}/></button>
