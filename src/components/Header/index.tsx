@@ -2,11 +2,16 @@ import { MapPin, ShoppingCart} from 'phosphor-react'
 import { HeaderContainer } from './styles'
 import logo from '../../assets/img/logo.svg';
 import { NavLink } from 'react-router-dom';
+import { CoffeContext } from '../../contexts/CoffeContext';
+import React from 'react';
 
 
 export const Header = () => {
-  const test = 0;
-  
+
+  const {coffesList,addCoffes} = React.useContext(CoffeContext);
+
+ 
+
   return (
     <HeaderContainer>
         <NavLink to='/'>
@@ -17,7 +22,7 @@ export const Header = () => {
             <div> <MapPin size={22} height={22}/> <span>Localidade</span>
             </div>
             <NavLink to='Checkout'><ShoppingCart size={18} height={18}/>
-            {test!==0?<div>{test}</div>:null}
+            {coffesList?.length!==0?<div>{coffesList?.length}</div>:null}
              
              
              </NavLink>

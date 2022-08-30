@@ -28,7 +28,7 @@ export const coffes = [
         nome:'Expresso Tradicional',
         descricao:'O tradicional café feito com água quente e grãos moídos',
         categoria:[categorias.tradicional],
-        preco:9.90
+        preco:9.9
     },
     {
         img:americano,

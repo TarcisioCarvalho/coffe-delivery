@@ -4,6 +4,7 @@ import homeImage from '../../assets/img/CoffePrincipal.png';
 import { Card } from '../../components/Card';
 import { Coffee, Package, ShoppingCart, Timer } from 'phosphor-react';
 import { coffes } from '../../data/data';
+import { CoffeContext } from '../../contexts/CoffeContext';
 
 
 interface SpanProps{
@@ -11,6 +12,10 @@ interface SpanProps{
 }
 
 export const Home = () => {
+
+  const {coffesList,addCoffes} = React.useContext(CoffeContext);
+
+
   return (
     <HomeContainer>
         <div  className='homeTemplate'>

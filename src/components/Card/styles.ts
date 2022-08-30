@@ -88,7 +88,7 @@ export const CardContainer = styled.div`
             background-color:${({theme})=> theme.colors["base-button"]};
             margin-top:0;
             width:76px;
-            .buttonCart{
+            button{
                 border:none;
                 cursor: pointer;
                 background-color:${({theme})=> theme.colors["base-button"]};

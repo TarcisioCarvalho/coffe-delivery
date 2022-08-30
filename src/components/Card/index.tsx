@@ -4,7 +4,7 @@ import { CardContainer } from './styles'
 import coffeExpresso from '../../assets/img/coffe.svg';
 import { Minus, Plus, ShoppingCartSimple } from 'phosphor-react';
 import { NavLink } from 'react-router-dom';
-import cubano from '../../assets/img/coffes/Cubano.svg';
+import { CoffeContext } from '../../contexts/CoffeContext';
 
 
 interface CardProps{
@@ -17,7 +17,8 @@ interface CardProps{
 
 
 export const Card = ({img,nome,descricao,categorias,preco}:CardProps) => {
-
+    const {coffesList,addCoffes} = React.useContext(CoffeContext);
+   
     
   return (
     <CardContainer>
@@ -31,10 +32,15 @@ export const Card = ({img,nome,descricao,categorias,preco}:CardProps) => {
             <span>
                 R$ <span>{preco}</span>
             </span>
-            <div>
+            <div className='buttonsPlusMinus'>
                 <button><Minus size={14}/></button>
                 <span>5</span>
-                <button><Plus size={14}/></button>
+                <button onClick={()=> addCoffes!(
+                    {img:img,
+                     nome:nome,
+                     preco:preco,
+                    }
+                )}><Plus size={14}/></button>
             </div>
             <NavLink to='Checkout' className='buttonCart'>
                <ShoppingCartSimple size={22}/> 
