@@ -14,7 +14,7 @@ interface CardOrderItemProps{
 
 export const CardOrderItem = ({imagem,nome,quantidade,preco}:CardOrderItemProps) => {
 
-  const {coffesList,addCoffes, removeCoffes} = React.useContext(CoffeContext);
+  const {coffesList,addCoffes, removeCoffes,removeCoffeToList} = React.useContext(CoffeContext);
 
   return (
     <CardOrderItemContainer>
@@ -32,7 +32,9 @@ export const CardOrderItem = ({imagem,nome,quantidade,preco}:CardOrderItemProps)
                     })}><Plus size={14}/></button>
                             </div>
 
-                            <button className='buttonRemover'><span><Trash size={14}/></span> Remover </button>
+                            <button onClick={()=> removeCoffeToList!(nome!)}
+                             className='buttonRemover'>
+                              <span><Trash size={14}/></span> Remover </button>
                         </div>
                 </div>
                 <span className='price'>R$ {preco}</span>

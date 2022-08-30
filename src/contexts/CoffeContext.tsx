@@ -8,10 +8,10 @@ interface Coffe{
 }
 
 interface CoffeContext{
-   
         coffesList?:Coffe[];
         addCoffes?:(coffeProduct:Coffe)=> void
         removeCoffes?:(coffeName:string) => void
+        removeCoffeToList?:(coffeName:string)=> void
 }
 
 
@@ -20,6 +20,13 @@ export const CoffeContext = React.createContext({} as CoffeContext);
 export const CoffeContextProvider = ({children}:any)=>{
 
     const [coffesList,setCoffes] = React.useState([] as Coffe[]);
+
+    function removeCoffeToList(coffeName:string){
+        setCoffes((state)=>{
+            const newList = state.filter(coffe => coffe.nome!==coffeName)
+            return newList;
+        })
+    }
 
     function removeCoffes(coffeName:string){
         setCoffes((state) =>{
@@ -64,7 +71,7 @@ export const CoffeContextProvider = ({children}:any)=>{
         }) */
     }
 
-    return  <CoffeContext.Provider value={{coffesList,addCoffes,removeCoffes}}>
+    return  <CoffeContext.Provider value={{coffesList,addCoffes,removeCoffes,removeCoffeToList}}>
                      {children}
             </CoffeContext.Provider>
 }
