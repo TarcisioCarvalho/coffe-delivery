@@ -17,9 +17,8 @@ interface CardProps{
 
 
 export const Card = ({img,nome,descricao,categorias,preco}:CardProps) => {
-    const {coffesList,addCoffes} = React.useContext(CoffeContext);
-   
-    
+    const {coffesList,addCoffes, removeCoffes} = React.useContext(CoffeContext);
+    const quantidade = (coffesList?.find(coffe => coffe.nome === nome)?.quantidade)===undefined?0:(coffesList?.find(coffe => coffe.nome === nome)?.quantidade);
   return (
     <CardContainer>
         <img src={img} alt="" />
@@ -33,8 +32,8 @@ export const Card = ({img,nome,descricao,categorias,preco}:CardProps) => {
                 R$ <span>{preco}</span>
             </span>
             <div className='buttonsPlusMinus'>
-                <button><Minus size={14}/></button>
-                <span>5</span>
+                <button onClick={()=> removeCoffes!(nome)}><Minus size={14}/></button>
+                <span>{quantidade}</span>
                 <button onClick={()=> addCoffes!(
                     {img:img,
                      nome:nome,

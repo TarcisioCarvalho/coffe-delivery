@@ -52,13 +52,6 @@ export const coffes = [
         preco:9.9
     },
     {
-        img:cafeGelado,
-        nome:'Expresso Gelado',
-        descricao:'Bebida preparada com café expresso e cubos de gelo',
-        categoria:[categorias.tradicional,categorias.gelado],
-        preco:9.9
-    },
-    {
         img:cafeComLeite,
         nome:'Café com Leite',
         descricao:'Meio a meio de expresso tradicional com leite vaporizado',

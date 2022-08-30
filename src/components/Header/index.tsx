@@ -22,7 +22,9 @@ export const Header = () => {
             <div> <MapPin size={22} height={22}/> <span>Localidade</span>
             </div>
             <NavLink to='Checkout'><ShoppingCart size={18} height={18}/>
-            {coffesList?.length!==0?<div>{coffesList?.length}</div>:null}
+            {coffesList?.length!==0?<div>{coffesList?.reduce((acc,currentValue)=>{
+              return acc + currentValue.quantidade!;
+            },0)}</div>:null}
              
              
              </NavLink>

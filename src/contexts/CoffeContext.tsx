@@ -11,6 +11,7 @@ interface CoffeContext{
    
         coffesList?:Coffe[];
         addCoffes?:(coffeProduct:Coffe)=> void
+        removeCoffes?:(coffeName:string) => void
 }
 
 
@@ -18,18 +19,41 @@ export const CoffeContext = React.createContext({} as CoffeContext);
 
 export const CoffeContextProvider = ({children}:any)=>{
 
-    const [coffesList,setCoffes] = React.useState([{img :'',nome:'',preco:0,quantidade:0}] as Coffe[]);
+    const [coffesList,setCoffes] = React.useState([] as Coffe[]);
+
+    function removeCoffes(coffeName:string){
+        setCoffes((state) =>{
+            const newList = state.map(coffe =>{
+                if(coffe.nome === coffeName && coffe.quantidade!>0) {
+                    const novaQuantidade = coffe.quantidade! - 1;
+                    return {...coffe,quantidade:novaQuantidade}
+                }
+                return{...coffe}
+            })
+            return [...newList];
+        }
+
+        );
+    }
 
     function addCoffes (coffeProduct:Coffe){
+        let flag = false;
             setCoffes((state)=>{
-                state.map(coffe => {
+              const newList =  state.map(coffe => {
+                
                     if(coffeProduct.nome===coffe.nome)
                     {
-                        const quantity = coffe.quantidade! + 1;
+                        console.log("Entrei aki");
+                        flag=true;
+                        const quantity = coffe.quantidade===null?0:coffe.quantidade! + 1;
                         return {...coffe,quantidade:quantity}
                     }
+
+                    return {...coffe}
                 })
-                return [...state,coffeProduct]
+                if(flag) return [...newList]
+                flag=false;
+                return[...state,{...coffeProduct,quantidade:1}]
             })
        /*  setCoffes((state)=> {
             const image = img;
@@ -40,7 +64,7 @@ export const CoffeContextProvider = ({children}:any)=>{
         }) */
     }
 
-    return  <CoffeContext.Provider value={{coffesList,addCoffes}}>
+    return  <CoffeContext.Provider value={{coffesList,addCoffes,removeCoffes}}>
                      {children}
             </CoffeContext.Provider>
 }
