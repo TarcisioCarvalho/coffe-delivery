@@ -8,6 +8,7 @@ export const FormContainer = styled.form`
     gap:1rem;
     flex-wrap:wrap ;
     border-radius:6px;
+    height:100%;
     div{
         display:flex;
         flex-direction:column;

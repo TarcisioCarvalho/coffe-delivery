@@ -7,7 +7,7 @@ export const PricesContainer = styled.div`
         padding-right:1rem;
         background-color:${({theme})=> theme.colors["base-card"]};
         border-radius: 6px 36px;
-        padding-top:1.5rem;
+       // padding-top:1.5rem;
         padding-bottom:1.5rem;
         width:100%;
         display:flex;
@@ -18,7 +18,6 @@ export const PricesContainer = styled.div`
             width:100%;
             display:flex;
             justify-content:space-between;
-          
         }
 
         div:nth-child(1) {

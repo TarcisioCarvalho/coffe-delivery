@@ -8,7 +8,7 @@ export const CardOrderContainer = styled.article`
     width:100%;
     padding:1rem;
     //max-width:256px;
-    
+    overflow:auto;
     background-color:${({theme})=> theme.colors["base-card"]};
     position:relative;
     border-radius: 6px 36px;

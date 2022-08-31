@@ -21,6 +21,7 @@ export const CheckOutContainer = styled.main`
 @media only screen and (min-width: 1150px) {
       .formAndCardOrder{
        flex-direction:row;
+       align-items:top;
       }
 
       .paymentCardAndPrices{

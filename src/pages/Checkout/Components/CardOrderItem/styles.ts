@@ -16,15 +16,17 @@ img {
 }
 div {
     display:flex;
-    
+    flex-direction:column;
     align-items:center;
     gap: 0.5rem;
     div {
-        
+        flex-direction:row;
         border:none;
         padding: 0.25rem;
+       
         div {
-            background-color:${({theme})=> theme.colors["base-button"]};
+            
+            //background-color:${({theme})=> theme.colors["base-button"]};
         }
         span {
             color:${({theme})=> theme.colors["base-title"]};
@@ -34,6 +36,7 @@ div {
         }
     }
     button {
+        margin-left:.5rem;
         cursor: pointer;
         display:flex;
         align-items:center;
@@ -60,8 +63,9 @@ div {
 }
 
 .addOrRemoveItens{
-    flex-direction:column;
-    gap: 0.5rem;
+    div {
+        background-color:${({theme})=> theme.colors["base-button"]};
+    }
 }
 
 .buttonRemover:hover{

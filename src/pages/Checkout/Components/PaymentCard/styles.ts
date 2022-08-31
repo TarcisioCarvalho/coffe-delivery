@@ -11,6 +11,7 @@ align-items:center ;
 width:100%;
 gap:2rem;
 margin-top:1rem;
+align-self:top;
 p {
     text-align:center;
 }

@@ -30,6 +30,8 @@ export const CardOrderItem = ({imagem,nome,quantidade,preco}:CardOrderItemProps)
                      nome:nome,
                      preco:preco,
                     })}><Plus size={14}/></button>
+
+                          
                             </div>
 
                             <button onClick={()=> removeCoffeToList!(nome!)}
