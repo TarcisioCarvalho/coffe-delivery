@@ -8,11 +8,11 @@ export const CardOrderContainer = styled.article`
     width:100%;
     padding:1rem;
     //max-width:256px;
-    overflow:auto;
     background-color:${({theme})=> theme.colors["base-card"]};
     position:relative;
     border-radius: 6px 36px;
-
+    overflow:auto;
+    max-height:405px;
     .prices{
         
         padding-top:1.5rem;
@@ -59,9 +59,20 @@ export const CardOrderContainer = styled.article`
         font-weight:${({theme})=> theme.fontsWeight.boldRoboto};
     }
 
+    .noProducts{
+       width:100%;
+       height:100%;
+       img {
+        width:100%;
+        height:100%;
+       }
+    }
+
     @media only screen and (min-width: 1150px) {
       width:54%;
       border-radius: 6px 36px 0 0;
     }
+
+
 
 `;
