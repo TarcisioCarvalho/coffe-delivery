@@ -58,7 +58,7 @@ export const Home = () => {
         <h4>Nossos Cafés</h4>
         <main>
                 {coffes.map(coffe => {
-                    return (<Card 
+                    return (<Card key={coffe.nome}
                         img={coffe.img}
                         nome={coffe.nome}
                         descricao={coffe.descricao}

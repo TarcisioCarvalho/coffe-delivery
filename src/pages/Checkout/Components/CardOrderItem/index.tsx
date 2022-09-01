@@ -15,7 +15,8 @@ interface CardOrderItemProps{
 export const CardOrderItem = ({imagem,nome,quantidade,preco}:CardOrderItemProps) => {
 
   const {coffesList,addCoffes, removeCoffes,removeCoffeToList} = React.useContext(CoffeContext);
-
+  const quantity = coffesList?.filter(coffe => coffe.nome === nome);
+  
   return (
     <CardOrderItemContainer>
                 <img src={imagem} alt="" />
@@ -39,7 +40,7 @@ export const CardOrderItem = ({imagem,nome,quantidade,preco}:CardOrderItemProps)
                               <span><Trash size={14}/></span> Remover </button>
                         </div>
                 </div>
-                <span className='price'>R$ {preco}</span>
+                <span className='price'>R$ {((quantity![0].quantidade!)*preco!).toFixed(2)}</span>
     </CardOrderItemContainer>
   )
 }

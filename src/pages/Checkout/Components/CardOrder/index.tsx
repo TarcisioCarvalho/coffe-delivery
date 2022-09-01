@@ -8,7 +8,7 @@ import { NavLink } from 'react-router-dom';
 export const CardOrder = () => {
 
   const {coffesList,addCoffes, removeCoffes} = React.useContext(CoffeContext);
-  const coffeListProducts = coffesList?.map(coffe => <CardOrderItem imagem={coffe.img} nome={coffe.nome} quantidade ={coffe.quantidade} preco = {coffe.preco} />);
+  const coffeListProducts = coffesList?.map(coffe => <CardOrderItem key={coffe.nome} imagem={coffe.img} nome={coffe.nome} quantidade ={coffe.quantidade} preco = {coffe.preco} />);
   const teste = 'Teste';
   return (
     <CardOrderContainer>

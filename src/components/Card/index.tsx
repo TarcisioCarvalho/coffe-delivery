@@ -23,13 +23,13 @@ export const Card = ({img,nome,descricao,categorias,preco}:CardProps) => {
     <CardContainer>
         <img src={img} alt="" />
         <div className='divCategorias'>
-             {categorias.map(categoria => <h3>{categoria}</h3>)}
+             {categorias.map(categoria => <h3 key={nome.length*Math.random()}>{categoria}</h3>)}
         </div>
         <h2>{nome}</h2>
         <p>{descricao} </p>
         <div>
             <span>
-                R$ <span>{preco}</span>
+                R$ <span>{preco.toFixed(2)}</span>
             </span>
             <div className='buttonsPlusMinus'>
                 <button onClick={()=> removeCoffes!(nome)}><Minus size={14}/></button>
