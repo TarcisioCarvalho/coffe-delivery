@@ -3,19 +3,23 @@
 
 # Sobre o projeto
 
-https://to-do-list-react-sepia.vercel.app/
+https://coffe-delivery-sandy.vercel.app/
 
-Primeiro desafio da trilha de ReactJS do Ignite. 
+Segundo desafio da trilha de ReactJS do Ignite. 
 
-Aplicação de controle de tarefas no estilo **to-do list**. 
-Layout disponibilizado no Figma [Layout](https://www.figma.com/file/pIZMrU0MGMLecVh8VzQ8sB/ToDo-List-Copy?fuid=1066868353423557753 "Layout no Figma").
+ Aplicação para gerenciar um carrinho de compras de uma cafeteria fictícia no estilo **E-commerce**. 
+Layout disponibilizado no Figma [Layout](https://www.figma.com/file/5yT9ZzZmRQRS4yivGGB3pl/Coffee-Delivery/duplicate "Layout no Figma").
 
 ## Requisitos
 
-- Adicionar uma nova tarefa
-- Marcar e desmarcar uma tarefa como concluída
-- Remover uma tarefa da listagem
-- Mostrar o progresso de conclusão das tarefas
+- Listagem de produtos (cafés) disponíveis para compra
+- Adicionar uma quantidade específicas de itens no carrinho
+- Aumentar ou remover a quantidade de itens no carrinho
+- Formulário para o usuário preencher o seu endereço
+- Exibir o total de itens no carrinho no Header
+- Exibir o valor total da soma de itens no carrinho multiplicados pelo valor
+- (Extra) Conexão com api viacep para preenchimento automático do formulário
+- (Extra) Responsividade ao projeto
 
 
 
@@ -26,7 +30,11 @@ Layout disponibilizado no Figma [Layout](https://www.figma.com/file/pIZMrU0MGMLe
 - Listas e chaves no ReactJS
 - Propriedades
 - Componentização
-- Local Storage(Extra)
+- Conexão com Api via Cep utilizando fetch (Extra)
+- React Context
+- React useEffect
+- Styled Components
+- Media queries para responsividade (Extra)
 
 ## Layout
 
