@@ -6,10 +6,11 @@ width:100%;
 display:flex;
 align-items:top;
 justify-content:space-around;
-gap:1.125rem;
+gap:0.125rem;
 border-bottom:1px solid #E6E5E5;
 padding-top:1rem;
 padding-bottom:1rem;
+
 img {
     width:4rem;
     height:4rem;
@@ -19,9 +20,11 @@ div {
     flex-direction:column;
     align-items:center;
     gap: 0.5rem;
+   
     div {
         flex-direction:row;
         border:none;
+        
         padding: 0.25rem;
        
         div {
@@ -64,6 +67,9 @@ div {
 }
 
 .addOrRemoveItens{
+    flex-direction:column ;
+    align-items:center ;
+  
     div:first-child{
         width:100px;
     }
@@ -83,5 +89,9 @@ div {
 
 @media only screen and (min-width: 1150px) {
     width:37%;
+    gap:1.125rem;
+    .addOrRemoveItens{
+        flex-direction:row;
+    }
 }
 `;
