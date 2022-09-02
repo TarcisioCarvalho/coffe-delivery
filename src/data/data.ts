@@ -35,90 +35,90 @@ export const coffes = [
         nome:'Expresso Americano',
         descricao:'Expresso diluído, menos intenso que o tradicional',
         categoria:[categorias.tradicional],
-        preco:9.9
+        preco:9.0
     },
     {
         img:expressoCremoso,
         nome:'Expresso Cremoso',
         descricao:'Café expresso tradicional com espuma cremosa',
         categoria:[categorias.tradicional],
-        preco:9.9
+        preco:11.0
     },
     {
         img:cafeGelado,
         nome:'Expresso Gelado',
         descricao:'Bebida preparada com café expresso e cubos de gelo',
         categoria:[categorias.tradicional,categorias.gelado],
-        preco:9.9
+        preco:7.0
     },
     {
         img:cafeComLeite,
         nome:'Café com Leite',
         descricao:'Meio a meio de expresso tradicional com leite vaporizado',
         categoria:[categorias.tradicional,categorias.comLeite],
-        preco:9.9
+        preco:7.5
     },
     {
         img:latte,
         nome:'Latte',
         descricao:'Uma dose de café expresso com o dobro de leite e espuma cremosa',
         categoria:[categorias.tradicional,categorias.comLeite],
-        preco:9.9
+        preco:7.8
     },
     {
         img:capuccino,
         nome:'Capuccino',
         descricao:'Bebida com canela feita de doses iguais de café, leite e espuma',
         categoria:[categorias.tradicional,categorias.comLeite],
-        preco:9.9
+        preco:10.0
     },
     {
         img:macchiato,
         nome:'Macchiato',
         descricao:'Café expresso misturado com um pouco de leite quente e espuma',
         categoria:[categorias.tradicional,categorias.comLeite],
-        preco:9.9
+        preco:12.0
     },
     {
         img:mochaccino,
         nome:'Mocaccino',
         descricao:'Café expresso com calda de chocolate, pouco leite e espuma',
         categoria:[categorias.tradicional,categorias.comLeite],
-        preco:9.9
+        preco:11.5
     },
     {
         img:chocolateQuente,
         nome:'Chocolate Quente',
         descricao:'Bebida feita com chocolate dissolvido no leite quente e café',
         categoria:[categorias.especial,categorias.comLeite],
-        preco:9.9
+        preco:7.0
     },
     {
         img:cubano,
         nome:'Cubano',
         descricao:'Drink gelado de café expresso com rum, creme de leite e hortelã',
         categoria:[categorias.especial,categorias.alcoolico, categorias.gelado],
-        preco:9.9
+        preco:15.0
     },
     {
         img:havaiano,
         nome:'Havaiano',
         descricao:'Bebida adocicada preparada com café e leite de coco',
         categoria:[categorias.especial],
-        preco:9.9
+        preco:17.5
     },
     {
         img:arabe,
         nome:'Árabe',
         descricao:'Bebida preparada com grãos de café árabe e especiarias',
         categoria:[categorias.especial],
-        preco:9.9
+        preco:14.5
     },
     {
         img:irlandes,
         nome:'Irlandês',
         descricao:'Bebida a base de café, uísque irlandês, açúcar e chantilly',
         categoria:[categorias.especial,categorias.alcoolico],
-        preco:9.9
+        preco:20.0
     }
 ]
