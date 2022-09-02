@@ -50,7 +50,12 @@ export const PricesContainer = styled.div`
         font-weight:${({theme})=> theme.fontsWeight.boldRoboto};
         transition: 0.3s;
         cursor:pointer;
-
+            &:disabled{
+                cursor:not-allowed;
+            }
+            &:disabled:hover{
+                background-color:${({theme})=> theme.colors.yellow};
+            }
         &:hover{
             background-color:${({theme})=> theme.colors["yellow-dark"]};
         }

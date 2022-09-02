@@ -59,10 +59,14 @@ div {
 }
 
 .price{
+    width:1rem;
     font-weight:${({theme})=> theme.fontsWeight.boldRoboto};
 }
 
 .addOrRemoveItens{
+    div:first-child{
+        width:100px;
+    }
     div {
         background-color:${({theme})=> theme.colors["base-button"]};
     }
