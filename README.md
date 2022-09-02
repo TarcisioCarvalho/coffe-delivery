@@ -61,10 +61,10 @@ Pré-requisitos: npm / yarn
 
 ```bash
 # clonar repositório
-git clone https://github.com/TarcisioCarvalho/to-do-list---react
+git clone https://github.com/TarcisioCarvalho/coffe-delivery
 
 # entrar na pasta do projeto front end web
-cd to-do-list---react
+cd coffe-delivery
 
 # instalar dependências
 npm install
