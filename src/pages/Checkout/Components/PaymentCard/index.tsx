@@ -4,6 +4,7 @@ import { PaymentCardContainer } from './styles';
 import { PaymentCardContext, TypesOfPayment } from '../../../../contexts/PaymentCardContext';
 
 export const PaymentCard = () => {
+    
     const {card,selectPaymentCard} = React.useContext(PaymentCardContext);
     
 

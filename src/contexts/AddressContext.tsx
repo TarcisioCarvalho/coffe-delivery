@@ -21,7 +21,6 @@ export const AddressContextProvider = ({children}:any) => {
   const [endereco,setEndereco] = React.useState<Endereco>(); 
 
   function updateCep(cep:string){
-    console.log(cep);
     setCep(cep);
   }
 
@@ -39,14 +38,9 @@ export const AddressContextProvider = ({children}:any) => {
   }
 
   React.useEffect(()=>{
-
-    
-
-
-    if(cep?.length===8){
-        console.log('Estou Aqui');
-        searchCep();
-    }
+    if(cep?.length===8) {
+      searchCep()
+    };
   },[cep])
 
 

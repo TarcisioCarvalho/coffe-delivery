@@ -18,6 +18,7 @@ export const PaymentCardContextProvider = ({children}:any) => {
     const [card,setCard] = React.useState<TypesOfPayment>();
 
     function selectPaymentCard(card:TypesOfPayment){
+        console.log(card);
         setCard(card);
     }
 

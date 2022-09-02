@@ -3,11 +3,13 @@ import { IconContainer, SuccessContainer } from './styles'
 import successImg from '../../assets/img/success.png';
 import { CurrencyDollar, MapPin, Timer } from 'phosphor-react';
 import { AddressContext } from '../../contexts/AddressContext';
+import { PaymentCardContext } from '../../contexts/PaymentCardContext';
 
 export const Success = () => {
 
     const {endereco} = React.useContext(AddressContext);
-    console.log(endereco);
+    const {card} = React.useContext(PaymentCardContext);
+
   return (
     
     <SuccessContainer>
@@ -33,7 +35,7 @@ export const Success = () => {
                     <IconContainer colorIcon='yellow-dark'><CurrencyDollar size={16}/></IconContainer>
                     <div>
                         <p>Pagamento na entrega</p>
-                        <p>Cartão de Crédito</p>
+                        <p>{card}</p>
                     </div>
                 </li>
            </ul>

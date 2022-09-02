@@ -1,11 +1,21 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom';
+import { AddressContext } from '../../../../contexts/AddressContext';
 import { CoffeContext } from '../../../../contexts/CoffeContext';
+import { PaymentCardContext } from '../../../../contexts/PaymentCardContext';
 import { PricesContainer } from './styles'
 
 export const Prices = () => {
 
   const {coffesList} = React.useContext(CoffeContext);
+  const {cep,endereco} = React.useContext(AddressContext);
+  const {card} = React.useContext(PaymentCardContext);
+
+  function checkCoditionsToCompleteTheOrder(){
+    
+    return !(coffesList?.length !== 0 && cep && endereco && card )
+  }
+
   const totalValue = coffesList?.reduce((previusValue,currentValue)=>{
     return (previusValue += (currentValue.quantidade!*currentValue.preco!))
   },0)
@@ -18,7 +28,11 @@ export const Prices = () => {
 
     <div><span>Total</span><span>{(totalValue! + 3.5).toFixed(2)} R$</span></div>
 
-    <NavLink to='/Success'><button className='buttonOrder'>Confirmar Pedido</button>
+    <NavLink to='/Success'>
+      <button disabled={checkCoditionsToCompleteTheOrder()}
+       className='buttonOrder'>
+        Confirmar Pedido
+      </button>
     </NavLink>
    
 </PricesContainer>
