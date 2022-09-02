@@ -7,13 +7,13 @@ import { PricesContainer } from './styles'
 
 export const Prices = () => {
 
-  const {coffesList} = React.useContext(CoffeContext);
-  const {cep,endereco} = React.useContext(AddressContext);
+  const {coffesList,removeAllCoffes} = React.useContext(CoffeContext);
+  const {cep,endereco,numero} = React.useContext(AddressContext);
   const {card} = React.useContext(PaymentCardContext);
 
   function checkCoditionsToCompleteTheOrder(){
     
-    return !(coffesList?.length !== 0 && cep && endereco && card )
+    return !(coffesList?.length !== 0 && cep && endereco && card && numero?.length!==0)
   }
 
   const totalValue = coffesList?.reduce((previusValue,currentValue)=>{
@@ -30,6 +30,7 @@ export const Prices = () => {
 
     <NavLink to='/Success'>
       <button disabled={checkCoditionsToCompleteTheOrder()}
+      onClick={()=> removeAllCoffes!()}
        className='buttonOrder'>
         Confirmar Pedido
       </button>

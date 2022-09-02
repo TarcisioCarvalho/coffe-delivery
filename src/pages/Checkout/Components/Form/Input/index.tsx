@@ -6,7 +6,7 @@ import { InputContainer } from './styles';
 
 
 export const Input = (props:any) => {
-  console.log(props);
+ 
   return (
     <InputContainer onChange={(e)=> props.updateCep(e.target.value)}
       
