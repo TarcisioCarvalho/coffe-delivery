@@ -1,4 +1,5 @@
 import React from 'react'
+import { NavLink } from 'react-router-dom';
 import { CoffeContext } from '../../../../contexts/CoffeContext';
 import { PricesContainer } from './styles'
 
@@ -17,7 +18,8 @@ export const Prices = () => {
 
     <div><span>Total</span><span>{(totalValue! + 3.5).toFixed(2)} R$</span></div>
 
-    <button className='buttonOrder'>Confirmar Pedido</button>
+    <NavLink to='/Success'><button className='buttonOrder'>Confirmar Pedido</button>
+    </NavLink>
    
 </PricesContainer>
   )

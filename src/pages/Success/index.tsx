@@ -2,9 +2,14 @@ import React from 'react'
 import { IconContainer, SuccessContainer } from './styles'
 import successImg from '../../assets/img/success.png';
 import { CurrencyDollar, MapPin, Timer } from 'phosphor-react';
+import { AddressContext } from '../../contexts/AddressContext';
 
 export const Success = () => {
+
+    const {endereco} = React.useContext(AddressContext);
+    console.log(endereco);
   return (
+    
     <SuccessContainer>
         <div>
             <h2>Uhu ! Pedido Confirmado</h2>
@@ -13,8 +18,8 @@ export const Success = () => {
                 <li>
                     <IconContainer colorIcon = 'purple'><MapPin size={16}/></IconContainer>
                     <div>
-                        <p>Entrega em Rua <b>João Daniel Martinelli,102</b></p>
-                        <p> Farrapos - Porto Alegre, RS</p>
+                        <p>Entrega em Rua <b>{endereco?.rua}</b></p>
+                        <p>{endereco?.cidade} - {endereco?.uf}</p>
                     </div>
                 </li>
                 <li>

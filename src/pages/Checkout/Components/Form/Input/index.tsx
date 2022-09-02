@@ -1,13 +1,22 @@
 import React from 'react'
-import { InputContainer } from './styles'
+import { AddressContext } from '../../../../../contexts/AddressContext';
+import { InputContainer } from './styles';
+
+
+
 
 export const Input = (props:any) => {
+  console.log(props);
   return (
-    <InputContainer 
-     placeholder={props.placeholder}
-     sizeProps ={props.sizeProps}
+    <InputContainer onChange={(e)=> props.updateCep(e.target.value)}
+      
+      maxLength={props.length}
+      value={props.value}
+      placeholder={props.placeholder}
+      sizeProps ={props.sizeProps}
       disabled = {props.disable}
       type = {props.type}
+
       >
     </InputContainer>
   )
