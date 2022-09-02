@@ -64,6 +64,7 @@ div {
 .price{
     width:1rem;
     font-weight:${({theme})=> theme.fontsWeight.boldRoboto};
+    font-size:${({theme})=> theme.textSizes["size-10px"]};
 }
 
 .addOrRemoveItens{
@@ -92,6 +93,9 @@ div {
     gap:1.125rem;
     .addOrRemoveItens{
         flex-direction:row;
+    }
+    .price{
+        font-size:${({theme})=> theme.textSizes["size-16px"]};
     }
 }
 `;
