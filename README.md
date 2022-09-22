@@ -1,4 +1,4 @@
-# todo-list---react
+# coffe-delivery
 [![NPM](https://img.shields.io/npm/l/react)](https://github.com/TarcisioCarvalho/adopet/blob/master/license)
 
 # Sobre o projeto
